@@ -12,7 +12,7 @@ import ContactSection from './pages/ContactSection';
 
 type SectionId = 'inicio' | 'educacion' | 'experiencia' | 'reconocimientos' | 'contacto';
 const App: React.FC = () => {
-  const [activeSection, setActiveSection] = useState<SectionId>('inicio');
+  const [, setActiveSection] = useState<SectionId>('inicio');
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
   const scrollToSection = (sectionId: SectionId): void => {
